@@ -1,15 +1,18 @@
 const controller = {
     index: (req,res)=>{
-        res.render('index')
+        res.render('index', {title: 'Home'})  
     },
+
     usados: (req,res)=>{
-        res.render('usados')
+        res.render('usados', {title: 'Usados'})
     },
+
     novos: (req,res)=>{
-        res.render('novos')
+        res.render('novos', {title: 'Novos'})
     },
-};
+
     
 
+};
 
-module.exports = controller;
+        module.exports = controller;
